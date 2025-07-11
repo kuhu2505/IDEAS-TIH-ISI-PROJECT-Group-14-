@@ -22,7 +22,7 @@ from mpl_toolkits.mplot3d import Axes3D
 st.title("Electoral Analysis Dashboard - Constituency Wise Insights")
 
 # Load data
-file_path = file_path = r"D:\District-Profile.xlsx"
+file_path = file_path = "District-Profile.xlsx"
 sheet_names = pd.ExcelFile(file_path).sheet_names
 selected_sheet = st.sidebar.selectbox("Select Constituency Sheet", sheet_names)
 df = pd.read_excel(file_path, sheet_name=selected_sheet)
